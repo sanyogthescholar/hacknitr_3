@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-image:linear-gradient(rgba(41, 39, 39, 0.55),rgba(41, 39, 39, 0.55)),url(balance1.jpg); */
+    background-color:rgb(7, 64, 97);
+    background-size: cover;
+    background-position: center;
+}
+.button{
+    color: white;
+    width: 100px;
+    padding: 8px;
+    margin: 10px 0px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    outline: inherit;
+    cursor: pointer;
+    background: transparent;
+    border:2px solid rgb(40, 58, 63);
+    position:relative;
+    overflow:hidden;
+    background-color:rgb(40, 58, 63);
+}
+
+.name h1{
+    top:30%;
+    font-family: sans-serif;
+    font-weight:bold;
+    color:rgb(19, 55, 78);
+    margin-bottom: 10px;
+    text-align: center;
+}
+.name{
+    font-family:sans-serif;
+    width:  450px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color:rgb(19, 55, 78);
+    margin-left: 250px;
+    margin-top: 30px;
+    background-color:rgb(104, 173, 190);
+    background-position: center;
+    border-radius: 15px;
+}
