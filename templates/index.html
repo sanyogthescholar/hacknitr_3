@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+<head>
+    <title>
+    Diabetes Prediction 
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    </head>
+<body bgcolor="faebd7" style="height: 100%;">
+
+    <div class="name">
+        <h1 align=center style="background-color: aqua;">DETECT DIABETES EARLY!</h1>
+
+        <fieldset style="border-radius: 40px; background-color: aliceblue; transform: translate(0%,15%);">
+            <img src="{{url_for('static', filename='diabetes.jpg')}}" alt="diabetes" style="width: 50%; height: 50%; float: right;">
+        <legend align=center style="font-size: 20px;"><br>
+        <h2> Enter your details</h2>
+        </legend>
+    <form name="Fill" method="POST" action="/predict">
+        <br>
+    
+          &nbsp;&nbsp;&nbsp;<label>Age:</label>&nbsp; <input type="text" name="Age" placeholder="Age"><br><br>
+
+          &nbsp;&nbsp;&nbsp;<label>Pregnant Time:</label>&nbsp; <input type="text" name="Pregnancies" placeholder="Pregnant Time"><br><br>
+
+          &nbsp;&nbsp;&nbsp;<label>Glucose:</label>&nbsp; <input type="text"name="Glucose" placeholder="Glucose"><br><br>
+      
+          &nbsp;&nbsp;&nbsp;<label>Blood Pressure:</label>&nbsp; <input type="text" name="BloodPressure" placeholder="Blood Pressure"><br><br>
+   
+          &nbsp;&nbsp;&nbsp;<label>Skin Thickness:</label>&nbsp; <input type="text" name="SkinThickness"  placeholder="Skin Thickness"><br><br>
+
+          &nbsp;&nbsp;&nbsp;<label>Insulin:</label>&nbsp; <input type="text" name="Insulin" placeholder="Insulin"><br><br>
+
+          &nbsp;&nbsp;&nbsp;<label>BMI:</label>&nbsp; <input type="text" name="BMI" placeholder="BMI"><br><br>
+
+          &nbsp;&nbsp;&nbsp;<label>DiabetesPedigreeFunction:</label>&nbsp; <input type="text" name="DiabetesPedigreeFunction" placeholder="Diabetes Pedigree"><br><br>
+
+          &nbsp;&nbsp;&nbsp;<button type="submit" class="button is-rounded is-info" name="button"><span>PREDICT</span></button><br><br>
+          <p>&nbsp;&nbsp;&nbsp;{{probability}}<p><br><br>
+   
+    </form>
+</fieldset>
+    </div>    
+    </body>      
+</html>
